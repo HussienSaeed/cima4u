@@ -1,13 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #131722;
+  color: #fff;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .secondFontColor {
+
+  color: #949cb0
+} */
+/* 
+.bord {
+  background-color: #a8a8a83d;
+  height: 1px;
+}
+
+.item {
+}
+
+.vote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #24bae2;
+} */
+
+
+.overlay{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.4s;
+}
+
+.item:hover .overlay{
+  top: 0;
+}
+img{
+    transition: all 0.4s;
+}
+.item:hover img{
+  transform: scale(1.2);
+}
+
+.vote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #24bae2;
+}
+.secondFontColor {
+
+  color: #949cb0
+}
+
+.bord {
+  background-color: #a8a8a83d;
+  height: 2px;
+  margin: 20px 0;
+}
+
+.offline{
+  position: fixed;
+  bottom: 20px;
+  left:20px;
+  z-index: 1000;
+  padding: 20px;
+  font-size: 30px;
+  
+}
+ul {
+  list-style-type: none;
+}
+
+ul >li{
+  padding: 5px;
+}
+.myForm >input{
+  background-color: transparent;
+  color: #fff;
+  border-color: #a8a8a83d;
+  elevation:40px;
 }
